@@ -1,0 +1,11 @@
+<button
+  [ngClass]="{
+    'chequing': accountType === 'Chequing' && !disabled,
+    'savings': accountType === 'Savings' && !disabled,
+    'disabled': disabled
+  }"
+  [disabled]="disabled"
+  (click)="onClick()"
+>
+  {{ label }}
+</button>

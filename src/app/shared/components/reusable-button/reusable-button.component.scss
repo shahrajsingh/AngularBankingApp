@@ -1,0 +1,49 @@
+:host {
+    display: inline-block;
+  }
+  
+  button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 64px;
+    border-radius: 32px;
+    outline: none;
+    line-height: inherit;
+    user-select: none;
+    -webkit-appearance: none;
+    overflow: visible;
+    vertical-align: middle;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    transition: opacity 0.2s ease-in;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .chequing {
+    background-color: #005CBB;
+    color: #fff;
+  }
+  
+  .savings {
+    background-color: #FFB787;
+    color: #6E3D17;
+  }
+
+  button.disabled,
+  button:disabled,
+  .disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
